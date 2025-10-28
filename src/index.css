@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .zoom-slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-lse-red rounded-full cursor-pointer;
+  }
+
+  .zoom-slider::-moz-range-thumb {
+    @apply w-4 h-4 bg-lse-red rounded-full cursor-pointer border-0;
+  }
+}
